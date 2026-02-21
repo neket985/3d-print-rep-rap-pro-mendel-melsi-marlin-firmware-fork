@@ -1,3 +1,11 @@
+сборка через VSCode с плагином PlatformIO:
+
+1) открыть плагин Platformio
+2) найти раздел melzi
+3) жмать Build, затем Upload (при подключенном usb кабеле на плате + замкнутой перемычкой reset на плате)
+
+<!-- ORIGINAL DESCRIPTION ----------------------------------------------------------------------------------------------------- -->
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
