@@ -137,6 +137,15 @@
 #define AUX1_09                               31  // A4
 #define AUX1_10                               12  // PWM
 
+#define AUX_IN_A1  30
+#define AUX_IN_A2  29
+#define AUX_IN_A3  28
+#define AUX_IN_A4  27
+#define AUX_IN_SDA 17
+#define AUX_IN_SCL 16
+#define AUX_IN_TX1 11
+#define AUX_IN_RX1 10
+
 //
 // LCD / Controller
 //
@@ -158,6 +167,14 @@
       #define LCD_PINS_D4                AUX1_08
       #define KILL_PIN                   AUX1_06
       #define BEEPER_PIN                 AUX1_01
+    
+    #elif ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
+
+        // распиновка для lcd REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER https://ender3.club/Установка_экрана_Reprap_Full_Graphics_12864_на_стоковую_плату/SKR_Mini_E3
+        #define LCD_PINS_RS              AUX_IN_A3  // AUX1_07
+        #define LCD_PINS_EN              AUX_IN_A2  // AUX1_05
+        #define LCD_PINS_D4              AUX_IN_A1  // AUX1_04
+        #define BEEPER_PIN               AUX_IN_A4  // AUX1_01
 
     #elif IS_U8GLIB_ST7920                        // SPI GLCD 12864 ST7920 ( like [www.digole.com] ) For Melzi V2.0
 
@@ -232,6 +249,13 @@
     #define BTN_ENC                      AUX1_03
     #define BTN_EN1                      AUX1_05
     #define BTN_EN2                      AUX1_07
+
+  #elif ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
+
+    // распиновка для lcd REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER https://ender3.club/Установка_экрана_Reprap_Full_Graphics_12864_на_стоковую_плату/SKR_Mini_E3
+    #define BTN_ENC                      AUX_IN_SDA //AUX1_03
+    #define BTN_EN1                      AUX_IN_TX1 //AUX1_05
+    #define BTN_EN2                      AUX_IN_RX1 //AUX1_07
 
   #elif ENABLED(ZONESTAR_LCD)                     // For the Tronxy Melzi boards
 

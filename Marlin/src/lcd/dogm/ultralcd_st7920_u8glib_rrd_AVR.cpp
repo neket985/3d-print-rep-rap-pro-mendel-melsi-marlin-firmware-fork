@@ -34,7 +34,7 @@
 #include "ultralcd_st7920_u8glib_rrd_AVR.h"
 
 // Optimize this code with -O3
-#pragma GCC optimize (3)
+// #pragma GCC optimize (3)
 
 #ifndef ST7920_DELAY_1
   #ifndef LCD_ST7920_DELAY_1
