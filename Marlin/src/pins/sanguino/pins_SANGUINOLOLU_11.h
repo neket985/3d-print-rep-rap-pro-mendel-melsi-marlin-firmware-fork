@@ -174,7 +174,7 @@
         #define LCD_PINS_RS              AUX_IN_A3  // AUX1_07
         #define LCD_PINS_EN              AUX_IN_A2  // AUX1_05
         #define LCD_PINS_D4              AUX_IN_A1  // AUX1_04
-        #define BEEPER_PIN               AUX_IN_A4  // AUX1_01
+        // #define BEEPER_PIN               AUX_IN_A4  // AUX1_01 закомментировал бипер, так как пищалка достала
 
     #elif IS_U8GLIB_ST7920                        // SPI GLCD 12864 ST7920 ( like [www.digole.com] ) For Melzi V2.0
 
